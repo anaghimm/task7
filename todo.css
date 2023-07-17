@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding: 70px;
+    position: relative;
+
+}
+.todoapp{
+    width:100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap:300px
+}
+.todoapp h3{
+    font-size: 30px;
+    color:rgba(134, 4, 134, 0.634);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#button1{
+    padding: 10px;
+}
+#button1 button{
+    color:rgba(134, 4, 134, 0.634);
+    width: 150px;
+    height:30px;
+    margin-left:10px;
+    border:none;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.popup{
+    width:800px;
+    height:80vh;
+    background:rgb(239, 236, 236) ;
+    border-radius: 20px;
+    box-shadow: 10px;
+    position:absolute;
+    left:50%;
+    top:0%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: left;
+    padding:0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4 top;
+}
+.open{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1)
+}
+.popup h3{
+    display: inline;
+    padding: 20px;
+    font-size: 30px;
+    color:rgba(83, 36, 83, 0.634);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.popup input{
+    border-radius: 6px;
+    border: none;
+    width:400px;
+    height:60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.inputbox::placeholder {
+    color: gray;
+    font-style: italic;
+    padding-left: 10px;
+}
+input[type="text"]{
+    padding-left: 10px;
+
+}
+
+.popup p{
+    display: inline;
+    margin-left:700px;
+    padding: 10px;
+}
+.popup p:hover{
+    background-color:rgb(203, 197, 197) ;
+    border-radius: 6px;
+}
+.popup label{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-bottom:20px;
+    margin-left: 10px;
+}
+.popup button{
+    color:rgba(134, 4, 134, 0.634);
+    background-color: white;
+    width: 150px;
+    height:30px;
+    margin-left:600px;
+    margin-top: 30px;
+    border:1px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    box-shadow: 10px;
+}
+button:hover{
+    transform:scale(1.1);
+}
+ul{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+ul li{
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 8px;
+    background-color: rgb(222, 219, 219);
+    border-radius: 6px;
+}
+#inputbox1{
+    font-size: 15px;
+    margin-right: 50px;
+}

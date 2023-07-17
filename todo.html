@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <div><h3>What are you going to plan?</h3></div>
+            <div id="button1"><button onclick="openPopup()">Add new</button></div>
+        </div>
+        <div class="popup" id="popup">
+            <h3>Add a new todo</h3>
+            <p onclick="closePopup()">X</p>
+            <br>
+            <div id="firstpart">
+                <label for="title">Enter you todo title:</label>
+                <br>
+                <input type="text"id="title" class="inputbox" placeholder="Give your title">
+            </div>
+            <br>
+            <div id="secondpart">
+                <label for="description">Enter your todo Description:</label>
+                <br>
+                <input type="text"id="description" class="inputbox" placeholder="Describe your task">
+            </div>
+            <br>
+            <div id="thirdpart">
+                <label for="ddl">Enter yout todo Deadline:</label>
+                <br>
+                <input type="text"id="ddl" class="inputbox" placeholder="Give the deadline you want">
+
+            </div>
+            <br>
+            <button type="submit" onclick="addTask()">Add and save</button>
+        </div>
+        <ul id="listcontainer">
+
+        </ul>
+
+    </div>
+    
+</body>
+</html>
